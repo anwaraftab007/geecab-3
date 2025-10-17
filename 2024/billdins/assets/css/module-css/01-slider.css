@@ -740,6 +740,7 @@ Main Slider Two
     -o-transition: all 1500ms ease;
     transition: all 1500ms ease;
     z-index: 10;
+    max-width: 800px;
 }
 
 .main-slider-two .active .main-slider-two__content .title-box {
@@ -779,6 +780,7 @@ Main Slider Two
     -o-transition: all 1500ms ease;
     transition: all 1500ms ease;
     z-index: 10;
+    max-width: 600px;
 }
 
 .main-slider-two .active .main-slider-two__content .text-box {
