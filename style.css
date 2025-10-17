@@ -214,3 +214,14 @@ ul.shadow-box .dropdown-submenu > a {
 .large-menu{
   display: none !important;
 }
+.about-one__counter{
+  display: block  ;
+}
+@media (max-width: 767px){
+  .about-one__counter{
+    display: none;
+  }
+  .about-one{
+    padding-top: 10px;
+  }
+}
