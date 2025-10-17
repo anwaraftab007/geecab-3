@@ -61,7 +61,7 @@
 
 .about-one__counter-box li .count-box h2 {
     color: var(--billdins-base);
-    font-size: 36px;
+    font-size: 25px;
     line-height: 40px;
     font-weight: 700;
 }
@@ -70,12 +70,12 @@
     position: relative;
     display: inline-block;
     color: var(--billdins-base);
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 700;
 }
 
 .about-one__counter-box li .count-box .k {
-    font-size: 37px;
+    font-size: 25px;
     top: -1px;
 }
 
