@@ -1857,7 +1857,301 @@ ul.custom-bullet-list li p {
         </section>
         <!--End Blog Two-->
 
+        <section class="blog-one blog-one--two industries-carousel-section">
+            <div class="blog-one--two__shape1 animation-infinite"
+                style="background-image: url(assets/images/shapes/blog-v1-shape2.png);">
+            </div>
+            <div class="blog-one--two__shape2 float-bob-x"><img src="assets/images/shapes/blog-v2-shape1.png" alt="">
+            </div>
+            <div class="container">
+                <div class="sec-title center text-center tg-heading-subheading animation-style2">
+                    <div class="sec-title__tagline">
+                        <div class="left-line"></div>
+                        <div class="text tg-element-title">
+                            <h4>Business Segments</h4>
+                        </div>
+                        <div class="right-line"></div>
+                    </div>
+                    <h2 class="sec-title__title tg-element-title">Industries We Cater To</h2>
+                </div>
+                
+                <style>
+                    .industries-carousel-section {
+                        padding: 80px 0;
+                        background: #f8f9fa;
+                        overflow: hidden;
+                    }
+            
+                    .industries-carousel-section .section-header {
+                        text-align: center;
+                        margin-bottom: 60px;
+                    }
+            
+                    .industries-carousel-section .section-subtitle {
+                        color: #666;
+                        font-size: 14px;
+                        letter-spacing: 2px;
+                        margin-bottom: 10px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                    }
+            
+                    .industries-carousel-section .section-title {
+                        color: #000;
+                        font-size: 42px;
+                        font-weight: 700;
+                        margin-bottom: 0;
+                    }
+            
+                    .industries-carousel-section .divider {
+                        width: 60px;
+                        height: 3px;
+                        background: #007bff;
+                        margin: 20px auto 0;
+                    }
+            
+                    .industries-carousel-section .carousel-wrapper {
+                        position: relative;
+                        overflow: hidden;
+                        padding: 20px 0 50px;
+                    }
+            
+                    .industries-carousel-section .carousel-track {
+                        display: flex;
+                        gap: 20px;
+                        width: fit-content;
+                        transition: transform 0.6s ease-in-out;
+                    }
+            
+                    .industries-carousel-section .industry-card {
+                        flex: 0 0 auto;
+                        width: 220px;
+                        position: relative;
+                        border-radius: 8px;
+                        overflow: hidden;
+                        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                        transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    }
+            
+            
+                    .industries-carousel-section .industry-card img {
+                        width: 100%;
+                        height: 280px;
+                        object-fit: cover;
+                        display: block;
+                    }
+            
+                    .industries-carousel-section .industry-caption {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        background: gray;
+                        opacity: .6 ;
+                        padding: 10px 10px 10px;
+                        color: white;
+                        text-align: center;
+                    }
+            
+                    .industries-carousel-section .industry-caption h5 {
+                        font-size: 18px;
+                        font-weight: 600;
+                        margin: 0;
+                    }
+            
+                    .industries-carousel-section .carousel-dots {
+                        display: flex;
+                        justify-content: center;
+                        gap: 10px;
+                        margin-top: 30px;
+                    }
+            
+                    .industries-carousel-section .dot {
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        background: #ddd;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                    }
+            
+                    .industries-carousel-section .dot.active {
+                        background: #FF5E14;;
+                        width: 30px;
+                        border-radius: 5px;
+                    }
+            
+                    @media (max-width: 768px) {
+                        .industries-carousel-section .section-title {
+                            font-size: 32px;
+                        }
+                        
+                        .industries-carousel-section .industry-card {
+                            width: 220px;
+                        }
+                        
+                        .industries-carousel-section .industry-card img {
+                            height: 220px;
+                        }
+                    }
+                </style>
+                   
+            <!-- //  background: #FF5E14; -->
+            <div class="carousel-wrapper" id="carouselWrapper">
+                <div class="carousel-track" id="carouselTrack">
+                        <!-- First Set -->
+                        <div class="industry-card">
+                            <img src="https://placehold.co/600x708/1e3a5f/white?text=Premise+Infrastructure" alt="Premise Infrastructure">
+                            <div class="industry-caption">
+                                <h5>Premise Infrastructure</h5>
+                            </div>
+                        </div>
+                        <div class="industry-card">
+                            <img src="https://placehold.co/600x708/d4691e/white?text=Power+%26+Mining" alt="Power & Mining">
+                            <div class="industry-caption">
+                                <h5>Power & Mining</h5>
+                            </div>
+                        </div>
+                        <div class="industry-card">
+                            <img src="https://placehold.co/600x708/0d4a70/white?text=Telecommunication" alt="Telecommunication">
+                            <div class="industry-caption">
+                                <h5>Telecommunication</h5>
+                            </div>
+                        </div>
+                        <div class="industry-card">
+                            <img src="https://placehold.co/600x708/1a5c8f/white?text=Oil+%26+Gas" alt="Oil & Gas">
+                            <div class="industry-caption">
+                                <h5>Oil & Gas</h5>
+                            </div>
+                        </div>
+                        <div class="industry-card">
+                            <img src="https://placehold.co/600x708/6b7280/white?text=Cement+%26+Steel" alt="Cement & Steel">
+                            <div class="industry-caption">
+                                <h5>Cement & Steel</h5>
+                            </div>
+                        </div>
+                        <div class="industry-card">
+                            <img src="https://placehold.co/600x708/4a7c59/white?text=Water+Treatment" alt="Water Treatment Plant">
+                            <div class="industry-caption">
+                                <h5>Water Treatment Plant</h5>
+                            </div>
+                        </div>
+        
+                        <!-- Duplicate Set for Seamless Loop -->
+                        <div class="industry-card">
+                            <img src="https://placehold.co/600x708/1e3a5f/white?text=Premise+Infrastructure" alt="Premise Infrastructure">
+                            <div class="industry-caption">
+                                <h5>Premise Infrastructure</h5>
+                            </div>
+                        </div>
+                        <div class="industry-card">
+                            <img src="https://placehold.co/600x708/d4691e/white?text=Power+%26+Mining" alt="Power & Mining">
+                            <div class="industry-caption">
+                                <h5>Power & Mining</h5>
+                            </div>
+                        </div>
+                        <div class="industry-card">
+                            <img src="https://placehold.co/600x708/0d4a70/white?text=Telecommunication" alt="Telecommunication">
+                            <div class="industry-caption">
+                                <h5>Telecommunication</h5>
+                            </div>
+                        </div>
+                        <div class="industry-card">
+                            <img src="https://placehold.co/600x708/1a5c8f/white?text=Oil+%26+Gas" alt="Oil & Gas">
+                            <div class="industry-caption">
+                                <h5>Oil & Gas</h5>
+                            </div>
+                        </div>
+                        <div class="industry-card">
+                            <img src="https://placehold.co/600x708/6b7280/white?text=Cement+%26+Steel" alt="Cement & Steel">
+                            <div class="industry-caption">
+                                <h5>Cement & Steel</h5>
+                            </div>
+                        </div>
+                        <div class="industry-card">
+                            <img src="https://placehold.co/600x708/4a7c59/white?text=Water+Treatment" alt="Water Treatment Plant">
+                            <div class="industry-caption">
+                                <h5>Water Treatment Plant</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="carousel-dots" id="carouselDots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const track = document.getElementById('carouselTrack');
+                        const dots = document.querySelectorAll('#carouselDots .dot');
+                        const cards = document.querySelectorAll('#carouselTrack .industry-card');
+                        const cardWidth = 220; // Card width
+                        const gap = 20; // Gap between cards
+                        const moveDistance = cardWidth + gap;
+                    
+                        let currentPosition = 0;
+                        let currentDot = 2;
+                        let isTransitioning = false;
+                        let autoScrollInterval;
+                    
+                        function moveCarousel(toIndex = null) {
+                            if (isTransitioning) return;
+                            isTransitioning = true;
+                    
+                            if (toIndex !== null) {
+                                // Move directly to clicked dot
+                                currentPosition = -moveDistance * toIndex;
+                                currentDot = toIndex;
+                            } else {
+                                // Auto scroll
+                                currentPosition -= moveDistance;
+                                currentDot = (currentDot + 1) % dots.length;
+                            }
+                    
+                            // Apply transform
+                            track.style.transition = 'transform 0.6s ease-in-out';
+                            track.style.transform = `translateX(${currentPosition}px)`;
+                    
+                            // Update dots
+                            dots.forEach(dot => dot.classList.remove('active'));
+                            dots[currentDot].classList.add('active');
+                    
+                            // Reset position for seamless loop
+                            setTimeout(() => {
+                                if (Math.abs(currentPosition) >= moveDistance * 6) {
+                                    track.style.transition = 'none';
+                                    currentPosition = 0;
+                                    track.style.transform = `translateX(${currentPosition}px)`;
+                                }
+                                isTransitioning = false;
+                            }, 600);
+                        }
+                    
+                        // Auto scroll
+                        function startAutoScroll() {
+                            autoScrollInterval = setInterval(() => moveCarousel(), 2000);
+                        }
+                        function stopAutoScroll() { clearInterval(autoScrollInterval); }
+                    
+                    
+                        // Click dots
+                        dots.forEach((dot, index) => {
+                            dot.addEventListener('click', () => moveCarousel(index));
+                        });
+                    
+                        startAutoScroll();
+                    });
+                    </script>
+            </div>
+        </section>
 
+        
 
 
 
