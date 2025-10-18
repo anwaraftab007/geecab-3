@@ -699,370 +699,111 @@ largeState.addEventListener('mouseleave', () => {
                 </div>
             </div>
         </section>
-        <section class="blog-details">
+        <section class="blog-one blog-one--two">
+            <div class="blog-one--two__shape1 animation-infinite"
+                style="background-image: url(assets/images/shapes/blog-v1-shape2.png);">
+            </div>
+            <div class="blog-one--two__shape2 float-bob-x"><img src="assets/images/shapes/blog-v2-shape1.png" alt="">
+            </div>
             <div class="container">
+
                 <div class="row" id="blogList">
 
- <!-- Blog Card 1 -->
- <div class="col-xl-4 col-lg-4 wow fadeInLeft animated" data-wow-delay="200ms" data-wow-duration="1500ms">
-    <div class="blog-one__single">
-        <div class="blog-one__single-img">
-            <div class="date-box">
-                <h3><span class="icon-calendar"></span> 5 Oct, 2025</h3>
-            </div>
-            <div class="inner">
-                <img src="/blogs/img/Extension Cord (1).png" alt="">
-                <img src="/blogs/img/Extension Cord (1).png" alt="">
-            </div>
-        </div>
-        <div class="blog-one__single-content">
-            <ul class="meta-box">
-                
-            </ul>
-            <h2><a href="/blog/high-quality-extension-cords-efficiency-safety/">How High-Quality Extension Cords Improve Power Efficiency and Safety?</a></h2>
-            <p style="text-align: justify !important;">Boost efficiency and safety with GeeCab premium extension cords. Durable, flame-retardant, high-load cords for homes, offices and industrial use in East India.</p>
-            <div class="btn-box">
-                <a href="/blog/high-quality-extension-cords-efficiency-safety/">Read More <span class="icon-next"></span></a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Blog Card 2 -->
-<div class="col-xl-4 col-lg-4 wow fadeInLeft animated" data-wow-delay="400ms" data-wow-duration="1500ms">
-    <div class="blog-one__single">
-        <div class="blog-one__single-img">
-            <div class="date-box">
-                <h3><span class="icon-calendar"></span> 5 Oct, 2025</h3>
-            </div>
-            <div class="inner">
-                <img src="/blogs/img/MCB Switchgear.png" alt="">
-                <img src="/blogs/img/MCB Switchgear.png" alt="">
-            </div>
-        </div>
-        <div class="blog-one__single-content">
-            <ul class="meta-box">
-                
-            </ul>
-            <h2><a href="/electrical-cable-management-accessories-east-india">Smart Electrical Installations Begin with the Right Cable Management Accessories</a></h2>
-            <p style="text-align: justify !important;">Explore reliable Plastic Cable Clips, Casing Pins and Nylon Cable Ties from GeeCab, trusted electrical cable management accessories supplier across East India.</p>
-            <div class="btn-box">
-                <a href="/electrical-cable-management-accessories-east-india">Read More <span class="icon-next"></span></a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Blog Card 3 -->
-<div class="col-xl-4 col-lg-4 wow fadeInLeft animated" data-wow-delay="600ms" data-wow-duration="1500ms">
-    <div class="blog-one__single">
-        <div class="blog-one__single-img">
-            <div class="date-box">
-                <h3><span class="icon-calendar"></span> 16 July, 2025</h3>
-            </div>
-            <div class="inner">
-                <img src="/blogs/img/Wires & Cables.png" alt="">
-                <img src="/blogs/img/Wires & Cables.png" alt="">
-            </div>
-        </div>
-        <div class="blog-one__single-content">
-            <ul class="meta-box">
-                
-            </ul>
-            <h2><a href="/the-best-among-the-rest-in-east-india">GeeCab - The Best Among the Rest in East India</a></h2>
-            <p style="text-align: justify !important;">Discover top-grade wires & cables from GeeCab. ISO-certified, fire-resistant and built for performance. Trusted by professionals across Eastern India and Bhutan.</p>
-            <div class="btn-box">
-                <a href="/the-best-among-the-rest-in-east-india">Read More <span class="icon-next"></span></a>
-            </div>
-        </div>
-    </div>
-</div>
-                    <!--End Blog One Single-->
-
-<!-- Blog Card 4 -->
-<div class="col-xl-4 col-lg-4 wow fadeInLeft animated" data-wow-delay="800ms" data-wow-duration="1500ms">
-    <div class="blog-one__single">
-        <div class="blog-one__single-img">
-            <div class="date-box">
-                <h3><span class="icon-calendar"></span> 15 July, 2025</h3>
-            </div>
-            <div class="inner">
-                <img src="/2024/billdins/assets/images/Products/Wires2.png" alt="">
-                <img src="/2024/billdins/assets/images/Products/Wires2.png" alt="">
-            </div>
-        </div>
-        <div class="blog-one__single-content">
-            <ul class="meta-box">
-                
-            </ul>
-            <h2><a href="/how-to-choose-the-right-electric-cable-manufacturer-in-india.html">How to Choose the Right Electric Cable Manufacturer in India?</a></h2>
-            <p style="text-align: justify !important;">Real estate refers to land, buildings, natural resources such as water </p>
-            <div class="btn-box">
-                <a href="/how-to-choose-the-right-electric-cable-manufacturer-in-india.html">Read More <span class="icon-next"></span></a>
-            </div>
-        </div>
-    </div>
-</div>
-
-                </div>
-              </div>
-              <script>
-                async function fetchBlogs() {
-                  const response = await fetch("/blog.json"); // Updated to local JSON
-                  const blogs = await response.json();
-              
-                  const blogList = document.getElementById("blogList");
-              
-                  blogs.forEach(blog => {
-                    if (blog.title && blog.date && blog.img) {
-                      const blogItem = document.createElement("div");
-                      blogItem.classList.add("col-xl-4", "col-lg-4");
-                      blogItem.innerHTML = `
-                        <!-- Start Blog One Single -->
-                        <div class="blog-one__single wow fadeInLeft animated">
-                          <div class="blog-one__single-img">
-                            <div class="date-box">
-                              <h3><span class="icon-calendar"></span> ${blog.date}</h3>
+                    <!-- Blog Card 1 -->
+                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="blog-one__single card">
+                            <div class="blog-one__single-img">
+                                <div class="date-box-style2">
+                                    <h2>5</h2>
+                                    <p>Oct</p>
+                                </div>
+                                <div class="inner">
+                                    <img src="/blogs/img/Extension Cord (1).png" alt="">
+                                    <img src="/blogs/img/Extension Cord (1).png" alt="">
+                                </div>
                             </div>
-                            <div class="inner">
-                              <img src="${blog.img.startsWith('/') ? blog.img : '/' + blog.img}" alt="${blog.title}">
-
+                            <div class="blog-one__single-content blog-card">
+                                <h2><a href="/blog/high-quality-extension-cords-efficiency-safety/">How High-Quality Extension Cords Improve Power Efficiency and Safety?</a></h2>
+                                <p style="text-align: justify !important;">Boost efficiency and safety with GeeCab premium extension cords. Durable, flame-retardant, high-load cords for homes, offices and industrial use in East India.</p>
+                                <div class="btn-box">
+                                    <a href="/blog/high-quality-extension-cords-efficiency-safety/">Read More <span class="icon-next"></span></a>
+                                </div>
                             </div>
-                          </div>
-                          <div class="blog-one__single-content">
-                            <ul class="meta-box">
-                              <li>
-                                <p><span class="icon-conversation"></span> <a href="#">02 Comments</a></p>
-                              </li>
-                              <li>
-                                <p><span class="icon-user"></span> <a href="#">Admin</a></p>
-                              </li>
-                            </ul>
-                            <h2><a href="${blog.url}">${blog.title}</a></h2>
-                            <div class="btn-box">
-                              <a href="${blog.url}">Read More <span class="icon-next"></span></a>
-                            </div>
-                          </div>
                         </div>
-                        <!-- End Blog One Single -->
-                      `;
-                      blogList.appendChild(blogItem);
-                    }
-                  });
-                }
-              
-                // window.onload = fetchBlogs;
-              </script>
-              
-            <link href="./2024/icons/style.css" rel="stylesheet">
-
-
-            <div class="embla">
-                <h2 class="text-3xl text-center font-bold mb-4">Our Presence</h2>
-                <div class="embla__viewport">
-                  <div class="embla__container" style="transform: translate3d(-1299.18px, 0px, 0px);">
-                    <!-- First Slide - West Bengal Icon -->
-                    <div class="embla__slide" style="transform: translate3d(0px, 0px, 0px);">
-                        <a href="/best-wires-and-cables-manufacturer-west-bengal"> 
-                      <div class="embla__slide__number">
-                        <div class="w-full text-center">
-                        <span><i class="industrio-icon-wb"></i></span>
-                      
-                        <p class="subheading">West Bengal</p>
-                      </div>
-                      </div>  
-                        </a>
                     </div>
-                    
-                    <!-- Second Slide - Bhutan Icon -->
-                    <div class="embla__slide" style="transform: translate3d(0px, 0px, 0px);">
-                        <a href="/best-wires-and-cables-manufacturer-bhutan"> 
-                      <div class="embla__slide__number">
-                        <div class="w-full text-center">
-                        <span><i class="industrio-icon-Bhutan"></i></span>
-                      
-                        <p class="subheading">Bhutan</p>
-                      </div>
-                      </div>
-                        </a>
+                
+                    <!-- Blog Card 2 -->
+                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="blog-one__single card">
+                            <div class="blog-one__single-img">
+                                <div class="date-box-style2">
+                                    <h2>5</h2>
+                                    <p>Oct</p>
+                                </div>
+                                <div class="inner">
+                                    <img src="/blogs/img/MCB Switchgear.png" alt="">
+                                    <img src="/blogs/img/MCB Switchgear.png" alt="">
+                                </div>
+                            </div>
+                            <div class="blog-one__single-content blog-card">
+                                <h2><a href="/electrical-cable-management-accessories-east-india">Smart Electrical Installations Begin with the Right Cable Management Accessories</a></h2>
+                                <p style="text-align: justify !important;">Explore reliable Plastic Cable Clips, Casing Pins and Nylon Cable Ties from GeeCab, trusted electrical cable management accessories supplier across East India.</p>
+                                <div class="btn-box">
+                                    <a href="/electrical-cable-management-accessories-east-india">Read More <span class="icon-next"></span></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <!-- Third Slide - Odisha Icon -->
-                    <div class="embla__slide">
-                        <a href="/best-wires-and-cables-manufacturer-odisha">
-                      <div class="embla__slide__number">
-                        <div class="w-full text-center">
-                        <span><i class="industrio-icon-odisha"></i></span>
-                      
-                        <p class="subheading">Odisha</p>
-                      </div>
-                      </div>
-                      </a>
+                
+                    <!-- Blog Card 3 -->
+                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="blog-one__single card">
+                            <div class="blog-one__single-img">
+                                <div class="date-box-style2">
+                                    <h2>16</h2>
+                                    <p>July</p>
+                                </div>
+                                <div class="inner">
+                                    <img src="/blogs/img/Wires & Cables.png" alt="">
+                                    <img src="/blogs/img/Wires & Cables.png" alt="">
+                                </div>
+                            </div>
+                            <div class="blog-one__single-content blog-card">
+                                <h2><a href="/the-best-among-the-rest-in-east-india">GeeCab - The Best Among the Rest in East India</a></h2>
+                                <p style="text-align: justify !important;">Discover top-grade wires & cables from GeeCab. ISO-certified, fire-resistant and built for performance. Trusted by professionals across Eastern India and Bhutan.</p>
+                                <div class="btn-box">
+                                    <a href="/the-best-among-the-rest-in-east-india">Read More <span class="icon-next"></span></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    
-                    
-                    <!-- Fifth Slide - Bihar Icon -->
-                    <div class="embla__slide">
-                        <a href="/best-wires-and-cables-manufacturer-bihar">
-                      <div class="embla__slide__number">
-                        <div class="w-full text-center">
-                        <span><i class="industrio-icon-bihar"></i></span>
-                      
-                        <p class="subheading">Bihar</p>
-                      </div>
-                      </div>
-                      </a>
+                
+                    <!-- Blog Card 4 -->
+                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="blog-one__single card">
+                            <div class="blog-one__single-img">
+                                <div class="date-box-style2">
+                                    <h2>15</h2>
+                                    <p>July</p>
+                                </div>
+                                <div class="inner">
+                                    <img src="/2024/billdins/assets/images/Products/Wires2.png" alt="">
+                                    <img src="/2024/billdins/assets/images/Products/Wires2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="blog-one__single-content blog-card">
+                                <h2><a href="/how-to-choose-the-right-electric-cable-manufacturer-in-india.html">How to Choose the Right Electric Cable Manufacturer in India?</a></h2>
+                                <p style="text-align: justify !important;">GeeCab is a leading manufacturer of smart electric and digital meters in West Bengal, providing accuracy to power use.	</p>
+                                <div class="btn-box">
+                                    <a href="/how-to-choose-the-right-electric-cable-manufacturer-in-india.html">Read More <span class="icon-next"></span></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <!-- Sixth Slide - Jharkhand Icon -->
-                    <div class="embla__slide">
-                        <a href="/best-wires-and-cables-manufacturer-jharkhand">
-                      <div class="embla__slide__number">
-                        <div class="w-full text-center">
-                        <span><i class="industrio-icon-jharkhand"></i></span>
-                      
-                        <p class="subheading">Jharkhand</p>
-                      </div>
-                      </div>
-                      </a>
-                    </div>
-                    
-                    <!-- Seventh Slide - Sikkim Icon -->
-                    <div class="embla__slide">
-                        <a href="/best-wires-and-cables-manufacturer-sikkim">
-                      <div class="embla__slide__number">
-                        <div class="w-full text-center">
-                        <span><i class="industrio-icon-sikkim"></i></span>
-                      
-                        <p class="subheading">Sikkim</p>
-                      </div>
-                      </div>
-                      </a>
-                    </div>
-                    
-                    <!-- Eighth Slide - Assam Icon -->
-                    <div class="embla__slide">
-                        <a href="/best-wires-and-cables-manufacturer-assam">
-                      <div class="embla__slide__number">
-                        <div class="w-full text-center">
-                        <span><i class="industrio-icon-assam"></i></span>
-                      
-                        <p class="subheading">Assam</p>
-                      </div>
-                      </div>
-                      </a>
-                    </div>
-                    
-                    <!-- Ninth Slide - Tripura Icon -->
-                    <div class="embla__slide">
-                        <a href="/best-wires-and-cables-manufacturer-tripura">
-                      <div class="embla__slide__number">
-                        <div class="w-full text-center">
-                        <span><i class="industrio-icon-tripura"></i></span>
-                      
-                        <p class="subheading">Tripura</p>
-                      </div>
-                      </div>
-                      </a>
-                    </div>
-                    
-                    <!-- Tenth Slide - Manipur Icon -->
-                    <div class="embla__slide">
-                        <a href="/best-wires-and-cables-manufacturer-manipur">
-                      <div class="embla__slide__number">
-                        <div class="w-full text-center">
-                        <span><i class="industrio-icon-manipur"></i></span>
-                      
-                        <p class="subheading">Manipur</p>
-                      </div>
-                      </div>
-                      </a>
-                    </div>
-                    
-                    <!-- Eleventh Slide - Nagaland Icon -->
-                    <div class="embla__slide">
-                        <a href="/best-wires-and-cables-manufacturer-nagaland">
-                      <div class="embla__slide__number">
-                        <div class="w-full text-center">
-                        <span><i class="industrio-icon-nagaland"></i></span>
-                      
-                        <p class="subheading">Nagaland</p>
-                      </div>
-                      </div>
-                        </a>
-                    </div>
-                    
-                    <!-- Twelfth Slide - Arunachal Pradesh Icon -->
-                    <div class="embla__slide">
-                        <a href="/best-wires-and-cables-manufacturer-arunachal-pradesh">
-                      <div class="embla__slide__number">
-                        <div class="w-full text-center">
-                        <span><i class="industrio-icon-gas-pipe"></i></span>
-                      
-                        <p class="subheading">Arunachal Pradesh</p>
-                      </div>
-                      </div>
-                        </a>
-                    </div>
-                    
-                    <!-- Thirteenth Slide - Mizoram Icon -->
-                    <div class="embla__slide">
-                        <a href="/best-wires-and-cables-manufacturer-mizoram">
-                      <div class="embla__slide__number">
-                        <div class="w-full text-center">
-                        <span><i class="industrio-icon-mizoram"></i></span>
-                      
-                        <p class="subheading">Mizoram</p>
-                      </div>
-                      </div>
-                        </a>
-                    </div>
-                    
-                    <!-- Fourteenth Slide - Meghalaya Icon -->
-                    <div class="embla__slide" style="transform: translate3d(0px, 0px, 0px);">
-                        <a href="/best-wires-and-cables-manufacturer-meghalaya">
-                      <div class="embla__slide__number">
-                        <div class="w-full text-center">
-                        <span><i class="industrio-icon-meghalaya"></i></span>
-                      
-                        <p class="subheading">Meghalaya</p>
-                      </div>
-                      </div>
-                      </a>
-                    </div>
-                  </div>
+                
                 </div>
-              </div>
-              
-              
-          
-              <!-- Embla Carousel and AutoScroll CDN -->
-              <script type="module">
-                import EmblaCarousel from 'https://cdn.jsdelivr.net/npm/embla-carousel@8.5.1/+esm';
-                import AutoScroll from 'https://cdn.jsdelivr.net/npm/embla-carousel-auto-scroll@8.5.1/+esm';
-          
-                // Embla Carousel and AutoScroll Initialization
-                const emblaNode = document.querySelector('.embla');
-                const viewportNode = emblaNode.querySelector('.embla__viewport');
                 
-                // Carousel options
-                const OPTIONS = { loop: true };
-          
-                // Initialize AutoScroll with a very small interval for continuous scrolling
-                const autoScroll = AutoScroll({ interval: 20 }); // Adjust this value for speed
-                
-                // Initialize EmblaCarousel
-                const emblaApi = EmblaCarousel(viewportNode, OPTIONS, [autoScroll]);
-          
-                // Add hover event listeners to control autoplay
-                emblaNode.addEventListener('mouseenter', () => {
-                  autoScroll.stop(); // Stop autoplay on hover
-                });
-          
-                emblaNode.addEventListener('mouseleave', () => {
-                  autoScroll.play(); // Resume autoplay when hover ends
-                });
-              </script>
+            </div>
         </section>
         
 </body>
