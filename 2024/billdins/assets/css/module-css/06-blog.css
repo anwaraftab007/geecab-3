@@ -294,7 +294,7 @@
 
 .blog-one--two .blog-one__single-content {
     padding: 28px 30px 22px;
-    box-shadow: 0px 0px 60px 0px rgba(4, 23, 26, 0.06);
+    /* box-shadow: 0px 0px 60px 0px rgba(4, 23, 26, 0.06); */
 }
 
 

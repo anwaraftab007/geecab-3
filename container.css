@@ -91,6 +91,11 @@
   max-width: 90%;
   
 }
+
+.blog-one--two .blog-one__single-content.blog-card{
+  max-width: 100%;
+  margin: auto;
+}
 @media (max-width: 768px) {
   .blog-one__single-content{
     margin: auto;
