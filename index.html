@@ -1516,7 +1516,7 @@ ul.custom-bullet-list li p {
                     }
             
                     .industries-carousel-section .section-subtitle {
-                        color: #666;
+                        /* color: #666; */
                         font-size: 14px;
                         letter-spacing: 2px;
                         margin-bottom: 10px;
@@ -1582,11 +1582,21 @@ ul.custom-bullet-list li p {
                     }
             
                     .industries-carousel-section .industry-caption h5 {
+                        color: white;
                         font-size: 18px;
                         font-weight: 600;
                         margin: 0;
                     }
-            
+                    .industries-carousel-section .industry-caption h5::after,
+.industries-carousel-section .industry-caption h5::before {
+    content: none !important;
+    display: none !important;
+}
+.industries-carousel-section .industry-caption h5 {
+    position: static !important;
+    z-index: 99;
+}
+
                     .industries-carousel-section .carousel-dots {
                         display: flex;
                         justify-content: center;
@@ -1672,107 +1682,96 @@ ul.custom-bullet-list li p {
                 <div class="carousel-track" id="carouselTrack">
                         <!-- First Set -->
                         <div class="industry-card">
-                            <img src="https://placehold.co/600x808/1e3a5f/white?text=Premise+Infrastructure" alt="Premise Infrastructure">
+                            <img src="/business-segment-img/Infrastructure & Real Estate.png" alt="Rural Development">
                             <div class="industry-caption">
-                                <h5>Premise Infrastructure</h5>
+                                <h5>Infrastructure & Real Estate</h5>
                             </div>
                         </div>
                         <div class="industry-card">
-                            <img src="https://placehold.co/600x808/d4691e/white?text=Power+%26+Mining" alt="Power & Mining">
+                            <img src="/business-segment-img/Power & Energy.png" alt="Power & Energy">
                             <div class="industry-caption">
-                                <h5>Power & Mining</h5>
+                                <h5>Power & Energy</h5>
                             </div>
                         </div>
                         <div class="industry-card">
-                            <img src="https://placehold.co/600x808/0d4a70/white?text=Telecommunication" alt="Telecommunication">
+                            <img src="/business-segment-img/Industrial Manufacturing.png" alt="Industrial Manufacturing">
                             <div class="industry-caption">
-                                <h5>Telecommunication</h5>
+                                <h5>Industrial Manufacturing</h5>
                             </div>
                         </div>
                         <div class="industry-card">
-                            <img src="https://placehold.co/600x808/1a5c8f/white?text=Oil+%26+Gas" alt="Oil & Gas">
+                            <img src="/business-segment-img/Agriculture.png" alt="Agriculture">
                             <div class="industry-caption">
-                                <h5>Oil & Gas</h5>
+                                <h5>Agriculture</h5>
                             </div>
                         </div>
                         <div class="industry-card">
-                            <img src="https://placehold.co/600x808/6b7280/white?text=Cement+%26+Steel" alt="Cement & Steel">
+                            <img src="/business-segment-img/Telecommunication & IT.png" alt="Telecommunication & IT">
                             <div class="industry-caption">
-                                <h5>Cement & Steel</h5>
+                                <h5>Information Technology</h5>
                             </div>
                         </div>
                         <div class="industry-card">
-                            <img src="https://placehold.co/600x808/4a7c59/white?text=Water+Treatment" alt="Water Treatment Plant">
+                            <img src="/business-segment-img/Transportation.png" alt="Transportation">
                             <div class="industry-caption">
-                                <h5>Water Treatment Plant</h5>
+                                <h5>Transportation</h5>
                             </div>
                         </div>
         
                         <!-- Duplicate Set for Seamless Loop -->
                         <div class="industry-card">
-                            <img src="https://placehold.co/600x808/1e3a5f/white?text=Premise+Infrastructure" alt="Premise Infrastructure">
+                            <img src="/business-segment-img/Rural Development.png" alt="Rural Development">
                             <div class="industry-caption">
-                                <h5>Premise Infrastructure</h5>
+                                <h5>Rural Development</h5>
                             </div>
                         </div>
                         <div class="industry-card">
-                            <img src="https://placehold.co/600x808/d4691e/white?text=Power+%26+Mining" alt="Power & Mining">
+                            <img src="/business-segment-img/Commercial & Hospitality.png" alt="Commercial & Hospitality0">
                             <div class="industry-caption">
-                                <h5>Power & Mining</h5>
-                            </div>
-                        </div>
-                        <div class="industry-card">
-                            <img src="https://placehold.co/600x808/0d4a70/white?text=Telecommunication" alt="Telecommunication">
-                            <div class="industry-caption">
-                                <h5>Telecommunication</h5>
-                            </div>
-                        </div>
-                        <div class="industry-card">
-                            <img src="https://placehold.co/600x808/1a5c8f/white?text=Oil+%26+Gas" alt="Oil & Gas">
-                            <div class="industry-caption">
-                                <h5>Oil & Gas</h5>
-                            </div>
-                        </div>
-                        <div class="industry-card">
-                            <img src="https://placehold.co/600x808/6b7280/white?text=Cement+%26+Steel" alt="Cement & Steel">
-                            <div class="industry-caption">
-                                <h5>Cement & Steel</h5>
-                            </div>
-                        </div>
-                        <div class="industry-card">
-                            <img src="https://placehold.co/600x808/4a7c59/white?text=Water+Treatment" alt="Water Treatment Plant">
-                            <div class="industry-caption">
-                                <h5>Water Treatment Plant</h5>
+                                <h5>Commercial & Hospitality</h5>
                             </div>
                         </div>
                     </div>
                 </div>
         
                 <div class="carousel-dots" id="carouselDots">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot active"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
                 </div>
-                <script>
-                    document.addEventListener('DOMContentLoaded', function() {
+               <script>
+                document.addEventListener('DOMContentLoaded', function() {
     const track = document.getElementById('carouselTrack');
-    const dots = document.querySelectorAll('#carouselDots .dot');
+    const dotsContainer = document.getElementById('carouselDots');
     const cards = document.querySelectorAll('#carouselTrack .industry-card');
     
-    let currentPosition = 0;
-    let currentDot = 2;
+    let currentIndex = 0;
     let isTransitioning = false;
     let autoScrollInterval;
 
     function getMoveDistance() {
         const card = cards[0];
-        const cardWidth = card.offsetWidth;
-        const gap = 20; // gap between cards
-        return cardWidth + gap;
+        const gap = 20;
+        return card.offsetWidth + gap;
+    }
+
+    // Calculate total visible cards based on screen size
+    function getTotalCards() {
+        const width = window.innerWidth;
+        if (width >= 1344) return 3; // Large devices
+        else if (width >= 968) return 5; // Medium devices
+        else if (width >= 768) return 6; // Medium devices
+        else return cards.length; // Small devices show one card at a time, loop all
+    }
+
+    // Generate dots dynamically
+    function generateDots() {
+        dotsContainer.innerHTML = ''; // clear existing dots
+        const totalCards = getTotalCards();
+        for (let i = 0; i < totalCards; i++) {
+            const dot = document.createElement('span');
+            dot.classList.add('dot');
+            if (i === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => moveCarousel(i));
+            dotsContainer.appendChild(dot);
+        }
     }
 
     function moveCarousel(toIndex = null) {
@@ -1780,51 +1779,44 @@ ul.custom-bullet-list li p {
         isTransitioning = true;
 
         const moveDistance = getMoveDistance();
+        const totalCards = getTotalCards();
+        const dots = document.querySelectorAll('#carouselDots .dot');
 
         if (toIndex !== null) {
-            currentPosition = -moveDistance * toIndex;
-            currentDot = toIndex;
+            currentIndex = toIndex;
         } else {
-            currentPosition -= moveDistance;
-            currentDot = (currentDot + 1) % dots.length;
+            currentIndex++;
+            if (currentIndex >= totalCards) currentIndex = 0;
         }
 
+        const offset = -currentIndex * moveDistance;
         track.style.transition = 'transform 0.6s ease-in-out';
-        track.style.transform = `translateX(${currentPosition}px)`;
+        track.style.transform = `translateX(${offset}px)`;
 
+        // Update dots
         dots.forEach(dot => dot.classList.remove('active'));
-        dots[currentDot].classList.add('active');
+        if(dots[currentIndex]) dots[currentIndex].classList.add('active');
 
-        setTimeout(() => {
-            if (Math.abs(currentPosition) >= moveDistance * 6) {
-                track.style.transition = 'none';
-                currentPosition = 0;
-                track.style.transform = `translateX(${currentPosition}px)`;
-            }
-            isTransitioning = false;
-        }, 600);
+        setTimeout(() => { isTransitioning = false; }, 600);
     }
 
     function startAutoScroll() {
         autoScrollInterval = setInterval(() => moveCarousel(), 2000);
     }
-    function stopAutoScroll() { clearInterval(autoScrollInterval); }
 
-    dots.forEach((dot, index) => {
-        dot.addEventListener('click', () => moveCarousel(index));
-    });
-
+    // On resize: recalc totalCards and regenerate dots
     window.addEventListener('resize', () => {
-        // update moveDistance dynamically on resize
-        currentPosition = 0;
-        track.style.transition = 'none';
-        track.style.transform = `translateX(${currentPosition}px)`;
+        generateDots();
+        moveCarousel(currentIndex);
     });
 
+    // Initial setup
+    generateDots();
+    moveCarousel(currentIndex);
     startAutoScroll();
 });
 
-                    </script>
+               </script>
             </div>
         </section>
 
