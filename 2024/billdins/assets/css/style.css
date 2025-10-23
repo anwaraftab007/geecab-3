@@ -591,9 +591,6 @@ Sec Title Css
   animation: bouncing 1.4s linear infinite;
 }
 
-.loader div:last-child {
-  margin: 0;
-}
 
 .loader div:nth-child(1) {
   background-color: rgba(var(--billdins-base-rgb), 1.0);
