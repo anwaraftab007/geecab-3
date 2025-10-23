@@ -514,26 +514,30 @@
             Self.addClass(accrodionName);
             Self.find(".accrodion .accrodion-content").hide();
             Self.find(".accrodion.active").find(".accrodion-content").show();
+    
             accordion.each(function () {
-                $(this)
-                    .find(".accrodion-title")
-                    .on("click", function () {
-                        if ($(this).parent().hasClass("active") === false) {
-                            $(".accrodion-grp." + accrodionName)
-                                .find(".accrodion")
-                                .removeClass("active");
-                            $(".accrodion-grp." + accrodionName)
-                                .find(".accrodion")
-                                .find(".accrodion-content")
-                                .slideUp();
-                            $(this).parent().addClass("active");
-                            $(this).parent().find(".accrodion-content").slideDown();
-                        }
-                    });
+                $(this).find(".accrodion-title").on("click", function () {
+                    var parentAcc = $(this).parent();
+                    var group = $(".accrodion-grp." + accrodionName);
+    
+                    if (!parentAcc.hasClass("active")) {
+                        // close others
+                        group.find(".accrodion").removeClass("active");
+                        group.find(".accrodion-content").slideUp();
+    
+                        // open current
+                        parentAcc.addClass("active");
+                        parentAcc.find(".accrodion-content").slideDown();
+                    } else {
+                        // 👇 this is new — closes itself if already open
+                        parentAcc.removeClass("active");
+                        parentAcc.find(".accrodion-content").slideUp();
+                    }
+                });
             });
         });
     }
-
+    
     // ===Team One Carousel=== //
     if ($("#team-one__thumb").length) {
         let testimonialsThumb = new Swiper("#team-one__thumb", {
